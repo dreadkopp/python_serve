@@ -1,0 +1,18 @@
+version: '3.6'
+
+networks:
+  dev_net:
+    name: dev_net
+
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: dev_app
+    environment:
+      - FLASK_ENV:developement
+    ports:
+      - 80:80
+    volumes:
+      - ./app:/var/www/app
