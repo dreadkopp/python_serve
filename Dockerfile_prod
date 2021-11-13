@@ -1,0 +1,6 @@
+FROM dev_app
+
+# Copy current state of app
+COPY app /var/www/app
+
+#add some healthchecks maybe ?

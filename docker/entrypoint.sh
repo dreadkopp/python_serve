@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 #installing requirements
-echo 'installing depts from requirements.txt'
+echo 'installing dependencies from requirements.txt'
 pip install -r requirements.txt
 
 #start gunicorn
